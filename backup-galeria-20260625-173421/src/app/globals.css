@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --header-height: 76px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fb;
+  color: #101827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+body::selection {
+  background: #f4c95d;
+  color: #07111f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid #f4c95d;
+  outline-offset: 3px;
+}
+
+.container-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.section-spacing {
+  padding-block: clamp(56px, 7vw, 104px);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.skip-link {
+  position: fixed;
+  left: 16px;
+  top: 12px;
+  z-index: 100;
+  transform: translateY(-160%);
+  border-radius: 8px;
+  background: #f4c95d;
+  color: #07111f;
+  padding: 10px 14px;
+  font-weight: 700;
+  transition: transform 180ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.gold-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.gold-shine::after {
+  content: "";
+  position: absolute;
+  inset-block: -40%;
+  left: -80%;
+  width: 48%;
+  transform: rotate(18deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.42), transparent);
+  animation: shine 4.8s ease-in-out infinite;
+}
+
+.prose-legal h2 {
+  margin-top: 1.75rem;
+  color: #07111f;
+  font-size: 1.05rem;
+  font-weight: 900;
+}
+
+.prose-legal h2:first-child {
+  margin-top: 0;
+}
+
+.prose-legal p {
+  margin-top: 0.65rem;
+}
+
+@keyframes shine {
+  0%,
+  65% {
+    left: -80%;
+  }
+  100% {
+    left: 135%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: 84px;
+  }
+}
+
+
+/* AJUSTE FINAL DO SITE */
+
+html,
+body,
+button,
+input,
+textarea,
+select {
+  font-family: Arial, Helvetica, sans-serif !important;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+li,
+button {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-style: normal !important;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 3.8vw, 3.8rem) !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.035em !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+  hyphens: none !important;
+}
+
+h2 {
+  line-height: 1.15 !important;
+  letter-spacing: -0.02em !important;
+}
+
+p {
+  line-height: 1.65 !important;
+  letter-spacing: normal !important;
+}
+
+nav a {
+  white-space: nowrap !important;
+  font-size: 0.875rem !important;
+  letter-spacing: normal !important;
+}
+
+button,
+a {
+  letter-spacing: normal !important;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.35rem !important;
+    line-height: 1.08 !important;
+  }
+
+  nav a {
+    white-space: normal !important;
+  }
+}
+
+/* FIM AJUSTE FINAL DO SITE */

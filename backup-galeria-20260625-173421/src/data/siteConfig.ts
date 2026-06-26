@@ -1,0 +1,319 @@
+﻿import type { Book, FAQ, GalleryImage, IconCard, SectionToggles, SimpleCard } from "@/types";
+
+export const siteConfig = {
+  productName: "Box Renda Extra com Estratégia",
+  brandName: "Renda Extra com Estratégia",
+  authorName: "Diego dos Santos Lima",
+  topBarText: "Oferta especial: Box com 2 livros digitais",
+  heroTitle:
+    "Dois livros práticos para organizar suas ideias e começar com mais clareza",
+  heroSubtitle:
+    "Conheça estratégias, possibilidades e orientações para buscar renda extra de forma organizada, mesmo com pouco tempo disponível.",
+  description:
+    "Um box digital com dois livros educativos sobre organização, planejamento e possibilidades de renda extra.",
+  originalPrice: "R$ 59,90",
+  promotionalPrice: "R$ 29,90",
+  paymentInfo: "Pagamento único. Produto 100% digital.",
+  paymentMethods: ["Pix", "Cartão de crédito", "Boleto, quando disponível no checkout"],
+  checkoutUrl: "CHECKOUT_URL_AQUI",
+  whatsappNumber: "WHATSAPP_AQUI",
+  whatsappMessage:
+    "Olá! Vim pela página do Box de 2 livros sobre renda extra e gostaria de tirar uma dúvida.",
+  youtubeVideoId: "",
+  localVideoSrc: "/videos/vsl-placeholder.mp4",
+  videoPoster: "/images/vsl-poster.png",
+  instagramUrl: "https://instagram.com/SEU_INSTAGRAM_AQUI",
+  facebookUrl: "https://facebook.com/SUA_PAGINA_AQUI",
+  supportEmail: "suporte@SEU_DOMINIO_AQUI.com",
+  guaranteeTime: "Prazo informado na página de pagamento",
+  metaPixelId: "META_PIXEL_ID_AQUI",
+  googleAnalyticsId: "GOOGLE_ANALYTICS_ID_AQUI",
+  seo: {
+    title: "Box Renda Extra com Estratégia | 2 Livros Digitais",
+    description:
+      "Conheça o Box com dois livros digitais sobre organização, renda extra, prestação de serviços e busca pelos primeiros clientes.",
+    siteUrl: "https://SEU_DOMINIO_AQUI",
+    canonicalUrl: "https://SEU_DOMINIO_AQUI",
+    ogImage: "/images/og-image.png"
+  },
+  sections: {
+    bonuses: true,
+    testimonials: true,
+    customerGallery: true,
+    guarantee: true,
+    author: true,
+    faq: true,
+    mobilePurchaseBar: true
+  } satisfies SectionToggles
+};
+
+export const navLinks = [
+  { href: "#beneficios", label: "Benefícios" },
+  { href: "#livros", label: "Livros" },
+  { href: "#depoimentos", label: "Depoimentos" },
+  { href: "#duvidas", label: "Dúvidas" },
+  { href: "#oferta", label: "Oferta" }
+];
+
+export const heroHighlights = [
+  "Acesso digital após a confirmação do pagamento",
+  "Leitura pelo celular, tablet ou computador",
+  "Conteúdo prático para iniciantes, sem promessas exageradas"
+];
+
+export const trustItems = [
+  {
+    title: "Acesso digital",
+    description: "Receba os materiais em formato digital para estudar onde preferir."
+  },
+  {
+    title: "Compra segura",
+    description: "Você será direcionado para um ambiente seguro de pagamento."
+  },
+  {
+    title: "Vários dispositivos",
+    description: "Leia pelo celular, tablet, notebook ou desktop."
+  },
+  {
+    title: "Suporte pelo WhatsApp",
+    description: "Canal preparado para tirar dúvidas sobre acesso e compra."
+  },
+  {
+    title: "Material organizado",
+    description: "Conteúdo direto, educativo e pensado para primeiros passos."
+  }
+] satisfies SimpleCard[];
+
+export const books = [
+  {
+    title: "Renda Extra para Quem Tem Pouco Tempo",
+    description:
+      "Material voltado para pessoas que trabalham, estudam, cuidam da família ou possuem pouco tempo disponível, apresentando formas de planejar e iniciar atividades de renda extra de maneira mais organizada.",
+    image: "/images/book-1.png",
+    imageAlt: "Capa do livro Renda Extra para Quem Tem Pouco Tempo",
+    lessons: [
+      "Como avaliar sua rotina antes de escolher uma atividade",
+      "Formas de separar pequenos blocos de tempo para estudo e ação",
+      "Critérios simples para priorizar ideias realistas",
+      "Cuidados para evitar promessas fáceis e decisões impulsivas"
+    ]
+  },
+  {
+    title: "A Fórmula do Primeiro Cliente",
+    description:
+      "Conteúdo direcionado para quem deseja entender como apresentar seus serviços, encontrar possíveis clientes e estruturar seus primeiros passos de venda.",
+    image: "/images/book-2.png",
+    imageAlt: "Capa do livro A Fórmula do Primeiro Cliente",
+    lessons: [
+      "Como transformar uma habilidade em uma oferta inicial",
+      "Onde encontrar possíveis clientes de forma responsável",
+      "Como apresentar sua solução com clareza",
+      "Como organizar atendimento, preço inicial e próximos passos"
+    ]
+  }
+] satisfies Book[];
+
+export const learningTopics = [
+  {
+    title: "Organização de tempo",
+    description: "Planeje pequenos períodos de estudo e execução sem depender de uma rotina perfeita.",
+    iconName: "Clock"
+  },
+  {
+    title: "Escolha de atividade",
+    description: "Compare ideias considerando habilidades, disponibilidade, demanda e simplicidade.",
+    iconName: "Compass"
+  },
+  {
+    title: "Primeiros passos",
+    description: "Monte uma sequência clara para sair da ideia e chegar a uma ação concreta.",
+    iconName: "ListChecks"
+  },
+  {
+    title: "Criação de oferta",
+    description: "Estruture o que você vende, para quem vende e como comunica o valor.",
+    iconName: "PackageCheck"
+  },
+  {
+    title: "Divulgação de serviços",
+    description: "Use canais simples, redes sociais e contatos com postura profissional.",
+    iconName: "Megaphone"
+  },
+  {
+    title: "Atendimento",
+    description: "Organize respostas, prazos e combinados para atender com mais confiança.",
+    iconName: "MessagesSquare"
+  },
+  {
+    title: "Precificação inicial",
+    description: "Entenda fatores que ajudam a definir valores de entrada de forma consciente.",
+    iconName: "BadgeDollarSign"
+  },
+  {
+    title: "Redes sociais",
+    description: "Aproveite perfis e mensagens para apresentar sua solução sem exageros.",
+    iconName: "Share2"
+  },
+  {
+    title: "Organização financeira",
+    description: "Separe entradas, custos e metas para acompanhar melhor o progresso.",
+    iconName: "WalletCards"
+  },
+  {
+    title: "Primeiros clientes",
+    description: "Conheça caminhos práticos para iniciar conversas e buscar oportunidades reais.",
+    iconName: "Handshake"
+  }
+] satisfies IconCard[];
+
+export const targetAudience = [
+  "Pessoas com pouco tempo",
+  "Trabalhadores",
+  "Estudantes",
+  "Pais e mães",
+  "Pessoas que desejam oferecer serviços",
+  "Iniciantes no mercado digital",
+  "Pequenos empreendedores",
+  "Pessoas buscando novas habilidades"
+];
+
+export const benefits = [
+  {
+    title: "Conteúdo organizado",
+    description: "Os materiais conduzem a leitura por etapas, facilitando a tomada de decisão."
+  },
+  {
+    title: "Linguagem simples",
+    description: "Explicações diretas para quem está começando e quer entender o caminho."
+  },
+  {
+    title: "Leitura prática",
+    description: "Textos objetivos, listas e orientações que ajudam a transformar ideias em plano."
+  },
+  {
+    title: "Acesso pelo celular",
+    description: "Estude nos intervalos, no transporte ou no momento em que fizer sentido."
+  },
+  {
+    title: "Dois materiais juntos",
+    description: "Um livro ajuda na organização da renda extra e o outro foca nos primeiros clientes."
+  },
+  {
+    title: "Estudo no seu ritmo",
+    description: "Você pode avançar aos poucos, revisar e adaptar as ideias à sua realidade."
+  },
+  {
+    title: "Orientação para iniciantes",
+    description: "O conteúdo parte do básico e evita pressupor experiência anterior."
+  },
+  {
+    title: "Exemplos e ideias práticas",
+    description: "Sugestões para clarear possibilidades, limites e próximos passos."
+  }
+] satisfies SimpleCard[];
+
+export const bonuses = [
+  {
+    title: "Checklist para organizar uma ideia de renda extra",
+    description: "Um roteiro simples para analisar disponibilidade, habilidades e próximos passos."
+  },
+  {
+    title: "Modelo simples de planejamento semanal",
+    description: "Uma estrutura leve para organizar estudo, divulgação e execução."
+  },
+  {
+    title: "Lista de ideias de serviços",
+    description: "Sugestões de caminhos possíveis para pesquisar e adaptar à sua realidade."
+  },
+  {
+    title: "Roteiro de apresentação para possíveis clientes",
+    description: "Um guia de conversa para explicar sua oferta com clareza e respeito."
+  }
+] satisfies SimpleCard[];
+
+export const customerGallery = [
+  {
+    src: "/images/testimonials/feedback-1.jpg",
+    alt: "Placeholder de captura de feedback autorizado",
+    caption: "Espaço para print de feedback autorizado"
+  },
+  {
+    src: "/images/testimonials/feedback-2.jpg",
+    alt: "Placeholder de mensagem de cliente autorizado",
+    caption: "Espaço para mensagem de cliente"
+  },
+  {
+    src: "/images/customers/customer-3.jpg",
+    alt: "Placeholder para foto autorizada de cliente",
+    caption: "Espaço para foto autorizada"
+  },
+  {
+    src: "/images/testimonials/feedback-3.jpg",
+    alt: "Placeholder de print do Instagram ou WhatsApp",
+    caption: "Espaço para print do Instagram ou WhatsApp"
+  }
+] satisfies GalleryImage[];
+
+export const faqs = [
+  {
+    question: "Como receberei os livros?",
+    answer:
+      "Após a confirmação do pagamento, as instruções de acesso serão enviadas pelos canais informados durante a compra, conforme o funcionamento do checkout configurado."
+  },
+  {
+    question: "Os livros são físicos ou digitais?",
+    answer:
+      "Os dois livros são digitais. Você poderá acessar o conteúdo por celular, tablet, notebook ou computador."
+  },
+  {
+    question: "Posso ler pelo celular?",
+    answer:
+      "Sim. Os materiais foram pensados para leitura digital e podem ser acessados em dispositivos móveis."
+  },
+  {
+    question: "Preciso ter experiência?",
+    answer:
+      "Não. O conteúdo foi organizado para iniciantes que desejam entender possibilidades, planejar melhor e começar com mais clareza."
+  },
+  {
+    question: "O conteúdo garante resultados financeiros?",
+    answer:
+      "O material possui finalidade educativa. Os resultados dependem da dedicação, das decisões, das habilidades, do mercado e de outros fatores individuais. Não existe garantia de ganhos financeiros."
+  },
+  {
+    question: "Como funciona o pagamento?",
+    answer:
+      "Ao clicar no botão de compra, você será direcionado para o ambiente seguro de pagamento configurado no projeto."
+  },
+  {
+    question: "Quando receberei o acesso?",
+    answer:
+      "O acesso é enviado após a confirmação do pagamento, de acordo com as regras da plataforma de checkout utilizada."
+  },
+  {
+    question: "Existe suporte?",
+    answer:
+      "Sim. O canal de suporte pode ser configurado pelo WhatsApp e pelo e-mail informados no arquivo central do projeto."
+  },
+  {
+    question: "Posso imprimir os livros?",
+    answer:
+      "Você pode ler e consultar os arquivos para uso pessoal. Regras de impressão, compartilhamento e direitos autorais devem seguir os termos de uso."
+  },
+  {
+    question: "Como solicitar ajuda?",
+    answer:
+      "Use o botão de WhatsApp ou o e-mail de suporte exibido no rodapé para pedir orientação sobre acesso, compra ou dúvidas gerais."
+  },
+  {
+    question: "O acesso possui prazo?",
+    answer:
+      "O prazo de acesso deve ser definido conforme a plataforma de venda utilizada. Edite esta informação no arquivo de configuração antes da publicação."
+  },
+  {
+    question: "Quais são as formas de pagamento?",
+    answer:
+      "As formas de pagamento são configuráveis e dependem do checkout escolhido. O projeto já deixa espaço para Pix, cartão e boleto quando disponível."
+  }
+] satisfies FAQ[];
+
