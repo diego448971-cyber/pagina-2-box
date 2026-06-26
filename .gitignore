@@ -10,3 +10,5 @@ backup-*/
 .env
 .env.local
 .agents/
+corrigir-site.cjs
+remover-placeholder-galeria.cjs
